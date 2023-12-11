@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .card {
+            width: 200px;
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card-header {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .card-paragraph {
+            margin-top: 10px;
+        }
+        .card-icon-button{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button{
+            background: linear-gradient(rgb(137, 76, 207),cornflowerblue);
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            text-transform:capitalize;
+            color: #ffffff;
+        }
+        .button:hover{
+            background:rgb(74, 120, 206);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="./img/lotus-1205631_1280.jpg" alt="Card 1">
+            <div class="card-header">Card 1</div>
+            <p class="card-paragraph">Short paragraph about Card 1.</p>
+            <div class="card-icon-button">
+                <a class="button" href="http://">Get Course</a>
+                <span>
+                    <i class="fa-solid fa-globe"></i>
+                    <span class="lang">English</span>
+                </span>
+            
+            </div>
+        </div>
+
+       
+    </div>
+
+</body>
+
+</html>
